@@ -1,3 +1,1 @@
-﻿  main.c
-C:\Users\gxyam\Desktop\Code\C\10. sorting\bubblesort\main.c(8,10): warning C4101: 'file': unreferenced local variable
-  bubblesort.vcxproj -> C:\Users\gxyam\Desktop\Code\C\10. sorting\bubblesort\Debug\bubblesort.exe
+﻿  bubblesort.vcxproj -> C:\Users\gxyam\Desktop\Code\C\10. sorting\bubblesort\Debug\bubblesort.exe
