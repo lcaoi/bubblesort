@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\gxyam\Desktop\Program\C\10. sort\Bubble sort\bubblesort\main.c(5,8): warning C4013: 'system' undefined; assuming extern returning int
+  bubblesort.vcxproj -> C:\Users\gxyam\Desktop\Program\C\10. sort\Bubble sort\bubblesort\Debug\bubblesort.exe
