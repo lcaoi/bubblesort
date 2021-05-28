@@ -1,2 +1,2 @@
-# bubblesort
-Bubble sort written in C
+# Different sorting algorithms
+
