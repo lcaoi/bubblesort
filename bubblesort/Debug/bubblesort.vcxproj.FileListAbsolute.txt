@@ -1,1 +1,2 @@
 C:\Users\gxyam\Desktop\Program\C\10. sort\Bubble sort\bubblesort\Debug\bubblesort.exe
+C:\Users\gxyam\Desktop\Code\C\10. sorting\bubblesort\Debug\bubblesort.exe
