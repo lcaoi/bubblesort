@@ -7,10 +7,10 @@
 int main() {
     // read from file
     char filename[100];
-	int numbers;
+    int numbers;
     char file[100];
 
-	FILE* fp;
+    FILE* fp;
     printf("Please enter the name of the file: \n");
     scanf("%s", filename);
 
@@ -29,7 +29,7 @@ int main() {
     // bubble sorting
     /*
     int size = sizeof file / sizeof file[0];
-    printf("%d", size);   
+    printf("%d", size);
     */
     int size = 10; // hard code
     int temp;
