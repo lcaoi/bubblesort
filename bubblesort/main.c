@@ -8,7 +8,8 @@ int main() {
     // read from file
     char filename[100];
     int numbers;
-    char file[100];
+    //char file[100];
+    int* file = (int*)malloc(5*sizeof(int));
 
     FILE* fp;
     printf("Please enter the name of the file: \n");
@@ -44,6 +45,6 @@ int main() {
     }
 
     for (int k = 0; k < 10; k++) {
-        printf("%d, ", file[k]);
+        printf("%d  ", file[k]);
     }
 }
