@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 // TODO: make the array "char file[100] to malloc(?), i.e. dynamic array with no fixed size"
-// testing
+// testing 
 int main() {
     // read from file
     //char filename[100];
