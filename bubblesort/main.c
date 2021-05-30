@@ -4,8 +4,7 @@
 
 int main() {
     // read from file
-    //char filename[100];
-    int* filename = (int*)malloc(10 * sizeof(int));
+    char filename[100];
     int numbers;
     //char file[100];
     int* file = (int*)malloc(10 * sizeof(int));   // what if 10 is not given?
@@ -54,4 +53,6 @@ int main() {
     printf("\n%d", size3);   // output = 1
     int size4 = sizeof filename / sizeof filename[0];
     printf("\n%d", size4);   // output = 1
+
+    fclose(fp);
 }
