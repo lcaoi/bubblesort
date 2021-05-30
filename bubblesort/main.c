@@ -2,15 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// TODO: make the array "char file[100] to malloc(?), i.e. dynamic array with no fixed size"
-// testing 
 int main() {
     // read from file
     //char filename[100];
-    int* filename = (int*)malloc(10*sizeof(int));
+    int* filename = (int*)malloc(10 * sizeof(int));
     int numbers;
     //char file[100];
-    int* file = (int*)malloc(10*sizeof(int));   // what if 10 is not given?
+    int* file = (int*)malloc(10 * sizeof(int));   // what if 10 is not given?
 
     FILE* fp;
     printf("Please enter the name of the file: \n");
@@ -28,12 +26,14 @@ int main() {
         i++;
     }
 
-    // bubble sorting
-    /*
+    // for testing
     int size = sizeof file / sizeof file[0];
-    printf("%d", size);
-    */
-    int size = 10; // hard code
+    printf("\n%d", size);   // output = 1
+    int size2 = sizeof filename / sizeof filename[0];
+    printf("\n%d\n", size2);   // output = 1
+
+    // bubble sorting
+    //int size = 10; // hard code
     int temp;
     for (int tail = 9; tail > 0; tail--) {
         for (int j = 0; j < tail; j++) {
@@ -48,4 +48,10 @@ int main() {
     for (int k = 0; k < 10; k++) {
         printf("%d  ", file[k]);
     }
+
+    // for testing
+    int size3 = sizeof file / sizeof file[0];
+    printf("\n%d", size3);   // output = 1
+    int size4 = sizeof filename / sizeof filename[0];
+    printf("\n%d", size4);   // output = 1
 }
