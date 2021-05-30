@@ -6,10 +6,11 @@
 // testing
 int main() {
     // read from file
-    char filename[100];
+    //char filename[100];
+    int* filename = (int*)malloc(10*sizeof(int));
     int numbers;
     //char file[100];
-    int* file = (int*)malloc(5*sizeof(int));
+    int* file = (int*)malloc(10*sizeof(int));   // what if 10 is not given?
 
     FILE* fp;
     printf("Please enter the name of the file: \n");
