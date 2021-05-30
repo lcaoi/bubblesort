@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// TODO: make the array "char file[100] to malloc(?), i.e. dynamic array with no fixed size"
-// testing
 int main() {
     // read from file
     //char filename[100];
@@ -26,14 +24,16 @@ int main() {
     while (fscanf(fp, "%d", &numbers) != EOF) {
         file[i] = numbers;
         i++;
-    }
+    }    
+    
+    // for testing
+    int size = sizeof file / sizeof file[0];
+    printf("\n%d", size);   // output = 1
+    int size2 = sizeof filename / sizeof filename[0];
+    printf("\n%d", size2);   // output = 1
 
     // bubble sorting
-    /*
-    int size = sizeof file / sizeof file[0];
-    printf("%d", size);
-    */
-    int size = 10; // hard code
+    //int size = 10; // hard code
     int temp;
     for (int tail = 9; tail > 0; tail--) {
         for (int j = 0; j < tail; j++) {
@@ -48,4 +48,10 @@ int main() {
     for (int k = 0; k < 10; k++) {
         printf("%d  ", file[k]);
     }
+
+    // for testing
+    int size3 = sizeof file / sizeof file[0];
+    printf("\n%d", size3);   // output = 1
+    int size4 = sizeof filename / sizeof filename[0];
+    printf("\n%d", size4);   // output = 1
 }
