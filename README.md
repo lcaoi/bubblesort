@@ -1,4 +1,4 @@
 # Different sorting algorithms in C
 
 Include:
-1. Bubble sort (has hard code)
+1. Bubble sort (malloc problem hvn't solve)
