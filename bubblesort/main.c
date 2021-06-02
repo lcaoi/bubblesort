@@ -4,11 +4,10 @@
 
 int main() {
     // read from file
-    //char filename[100];
-    int* filename = (int*)malloc(10*sizeof(int));
+    char filename[100];
     int numbers;
     //char file[100];
-    int* file = (int*)malloc(10*sizeof(int));   // what if 10 is not given?
+    int* file = (int*)malloc(10 * sizeof(int));   // what if 10 is not given?
 
     FILE* fp;
     printf("Please enter the name of the file: \n");
@@ -24,13 +23,13 @@ int main() {
     while (fscanf(fp, "%d", &numbers) != EOF) {
         file[i] = numbers;
         i++;
-    }    
-    
+    }
+
     // for testing
     int size = sizeof file / sizeof file[0];
     printf("\n%d", size);   // output = 1
     int size2 = sizeof filename / sizeof filename[0];
-    printf("\n%d", size2);   // output = 1
+    printf("\n%d\n", size2);   // output = 1
 
     // bubble sorting
     //int size = 10; // hard code
@@ -54,4 +53,6 @@ int main() {
     printf("\n%d", size3);   // output = 1
     int size4 = sizeof filename / sizeof filename[0];
     printf("\n%d", size4);   // output = 1
+
+    fclose(fp);
 }
