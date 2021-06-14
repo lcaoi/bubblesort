@@ -1,7 +1,7 @@
 # Different sorting algorithms in C
 
 Include:
-1. Bubble sort (malloc problem hvn't solve)
+1. Bubble sort
 
-Working on:
+Currently working on:
 1. Selection sort
