@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// TODO: sorting part
 // Existing problem: line 26 is hard code (int file[size] not working)
 
 int main() {
@@ -23,27 +24,27 @@ int main() {
     int size = numbers; // get the first line, which is size of the file
 
     int i = 0;
-    char file[10]; // to store 10 numbers
+    char numberList[10]; // to store 10 numbers
     while (fscanf(fp, "%d", &numbers) != EOF) {
-        file[i] = numbers;
+        numberList[i] = numbers;
         i++;
-    }
-
-    for (int k = 0; k < size; k++) {
-        printf("%d\n", file[k]);
     }
     fclose(fp);
     
     // selection sorting
+    int currentItem = 0;
+    int min = 0; // the minimum item
 
-    /*
-    int size = sizeof file / sizeof file[0];
-    printf("%d", size);
-    */
+    for (int j = 0; j < size; j++) {
+        currentItem = numberList[j];
+        min = numberList[j];
 
-
-    /*
-    for (int k = 0; k < 10; k++) {
-        printf("%d  ", file[k]);
-    }*/
+        for (int k = 0; k < size; k++); {
+            currentItem = numberList[j];
+            min = numberList[j];
+            if (currentItem < min) {
+                min = currentItem;
+            }
+        }
+    }
 }
