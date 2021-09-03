@@ -7,8 +7,8 @@
 
 int main() {
     // read from file
-    char filename[100];
-    int size = 0;
+    char filename[100]; // i.e. numbers.txt
+    int size = 0; // to store the size of the file
     int numbers;
 
     FILE* fp;
@@ -21,13 +21,25 @@ int main() {
         return;  // exit
     }
 
+    
+
     fscanf(fp, "%d", &numbers);
-    size = numbers;
-    /*
+    size = numbers; // get the first line, which is size of the file
+
+    int i = 0;
+    int file[10];
     while (fscanf(fp, "%d", &numbers) != EOF) {
         file[i] = numbers;
         i++;
-    }*/
+    }
+
+    
+    for (int k = 0; k < 10; k++) {
+        printf("%d\n", file[k]);
+    }
+
+    printf("\ndone\n");
+
     fclose(fp);
 
     printf("%d", size);
