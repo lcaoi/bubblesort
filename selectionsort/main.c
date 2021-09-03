@@ -31,19 +31,26 @@ int main() {
     }
     fclose(fp);
     
+
+
+
+
+
+    // currently working on
+
+
     // selection sorting
-    int currentItem = 0;
-    int min = 0; // the minimum item
+    int current = 0;
+    int minimum = 0;
+    int temp = 0; 
 
     for (int j = 0; j < size; j++) {
-        currentItem = numberList[j];
-        min = numberList[j];
-
-        for (int k = 0; k < size; k++); {
-            currentItem = numberList[j];
-            min = numberList[j];
-            if (currentItem < min) {
-                min = currentItem;
+        minimum = j;
+        for (int k = j; k < size; k++) {
+            if (numberList[k] < minimum) {
+                minimum = k;
+                temp = numberList[k];
+                numberList[k] = minimum;
             }
         }
     }
