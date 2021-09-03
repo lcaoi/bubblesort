@@ -2,13 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Done: read the first line of the file
-// Todo: 1. make it the size of the file 2. read the rest of the file 3. write the sorting part
+// Existing problem: line 26 is hard code (int file[size] not working)
 
 int main() {
     // read from file
     char filename[100]; // i.e. numbers.txt
-    int size = 0; // to store the size of the file
     int numbers;
 
     FILE* fp;
@@ -21,30 +19,23 @@ int main() {
         return;  // exit
     }
 
-    
-
     fscanf(fp, "%d", &numbers);
-    size = numbers; // get the first line, which is size of the file
+    int size = numbers; // get the first line, which is size of the file
 
     int i = 0;
-    int file[10];
+    char file[10]; // to store 10 numbers
     while (fscanf(fp, "%d", &numbers) != EOF) {
         file[i] = numbers;
         i++;
     }
 
-    
-    for (int k = 0; k < 10; k++) {
+    for (int k = 0; k < size; k++) {
         printf("%d\n", file[k]);
     }
-
-    printf("\ndone\n");
-
     fclose(fp);
-
-    printf("%d", size);
     
     // selection sorting
+
     /*
     int size = sizeof file / sizeof file[0];
     printf("%d", size);
